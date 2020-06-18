@@ -1,0 +1,161 @@
+body {
+    font-family: "open sans", sans-serif;
+}
+
+
+.header {
+    align-self: flex-start;
+    padding: 14px 9px;
+}
+
+.header a,
+.header a:visited {
+    color: #08a;
+}
+
+.header a:hover {
+    color: #069;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.juego .board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4AA9D0;
+    padding: 0 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.juego .board .columnas {
+    padding: 5px;
+    background-color: #3987A7;
+}
+
+.juego .board .columnas:hover {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.juego .board .columnas .circulo {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 40px;
+    background-color: #FFF;
+}
+
+.juego .board .columnas .circulo.rojo {
+    background-color: #EE6E52;
+}
+
+.juego .board .columnas .circulo.amarillo {
+    background-color: #F8CD46;
+}
+
+.juego .ribbon {
+    width: 100%;
+    height: 20px;
+    background-color: #28637B;
+}
+
+.juego .jugadores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.juego .jugadores .circulo {
+    width: 33px;
+    height: 33px;
+    margin: 10px 5px;
+    border-radius: 33px;
+    background-color: #FFF;
+}
+
+.juego .jugadores .circulo.rojo {
+    background-color: #EE6E52;
+}
+
+.juego .jugadores .circulo.amarillo {
+    background-color: #F5CA45;
+}
+
+.juego .jugadores .jugador,
+.juego .jugadores .direccion {
+    line-height: 33px;
+    margin: 10px 0;
+    color: #08a;
+}
+
+.juego .jugadores .jugador {
+    flex: 2;
+}
+
+.juego .jugadores .jugador.p2 {
+    text-align: right;
+}
+
+.juego .jugadores .direccion {
+    flex: 1;
+    text-align: center;
+}
+
+.juego .jugadores .direccion.left {
+    flex: 0;
+    width: 0;
+    height: 0;
+    border: 17px solid #F5CA45;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.juego .jugadores .direccion.text {
+    background-color: #F5CA45;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer button {
+    margin: 5px;
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer button.fb {
+    background-color: #3478E8;
+    border-color: #3478E8;
+    color: #FFF;
+}
+
+.footer button.embed {
+    background-color: transparent;
+    border-color: #3987A7;
+    color: #3987A7;
+}
+
+.footer button.embed:hover {
+    background-color: #3987A7;
+    border-color: #3987A7;
+    color: #FFF;
+}
